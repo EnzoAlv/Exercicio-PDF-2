@@ -1,4 +1,5 @@
 Cadastro de Tarefas
+
 Este projeto é uma aplicação simples de cadastro de tarefas construída com React. A aplicação permite que os usuários adicionem, visualizem e excluam tarefas, além de personalizar a cor de fundo da página. O nome do usuário é solicitado toda vez que a página é carregada e é armazenado no localStorage.
 
 Funcionalidades
