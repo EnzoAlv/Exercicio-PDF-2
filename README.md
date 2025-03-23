@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+Cadastro de Tarefas
+Este projeto é uma aplicação simples de cadastro de tarefas construída com React. A aplicação permite que os usuários adicionem, visualizem e excluam tarefas, além de personalizar a cor de fundo da página. O nome do usuário é solicitado toda vez que a página é carregada e é armazenado no localStorage.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Adicionar Tarefas: Os usuários podem adicionar novas tarefas digitando o nome da tarefa e clicando no botão "Registrar".
+Excluir Tarefas: Cada tarefa na lista possui um botão "Excluir" que permite remover a tarefa da lista.
+Personalizar Cor de Fundo: Os usuários podem escolher a cor de fundo da página entre várias opções (Preto, Ciano, CinzaTop, Branco, Vermelho, Verde).
+Armazenamento Local: As tarefas e a cor de fundo selecionada são armazenadas no localStorage, permitindo que os dados persistam entre as sessões.
+Solicitação de Nome: O nome do usuário é solicitado toda vez que a página é carregada e é armazenado no localStorage.
+Estrutura do Código
+Componentes
+Cadastro.js
+Estados:
 
-## Available Scripts
+input: Armazena o valor do campo de entrada para novas tarefas.
+tarefas: Armazena a lista de tarefas. Inicialmente, é carregada do localStorage ou com algumas tarefas padrão.
+nomeUsuario: Armazena o nome do usuário. É solicitado e armazenado no localStorage toda vez que a página é carregada.
+cor: Armazena a cor de fundo selecionada. Inicialmente, é carregada do localStorage.
+Efeitos:
 
-In the project directory, you can run:
+useEffect para solicitar o nome do usuário e armazená-lo no localStorage.
+useEffect para atualizar a cor de fundo e a cor do texto da página com base na cor selecionada.
+Funções:
 
-### `npm start`
+handleRegistro: Adiciona uma nova tarefa à lista e a armazena no localStorage.
+handleExcluir: Remove uma tarefa da lista e atualiza o localStorage.
+handleCorChange: Atualiza a cor de fundo da página e a armazena no localStorage.
+Renderização:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Um formulário para adicionar novas tarefas.
+Uma lista de tarefas com botões para excluir cada tarefa.
+Um conjunto de botões de rádio para selecionar a cor de fundo da página.
+Como Executar
+Clone o repositório:
+Navegue até o diretório do projeto:
+Instale as dependências:
+Execute a aplicação:
+A aplicação estará disponível em http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tecnologias Utilizadas
+React
+JavaScript
+HTML
+CSS (inline)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![print 1](https://github.com/user-attachments/assets/91af75db-3501-467a-bd84-88f98e2e9ed7)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![print 2](https://github.com/user-attachments/assets/92b6dd3b-d76e-47fb-bfef-c2398af8b036)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![print 3](https://github.com/user-attachments/assets/4e3f2df3-2782-4ed4-b0d1-55598bc46d9b)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
